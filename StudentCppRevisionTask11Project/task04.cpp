@@ -38,7 +38,6 @@ int task04(int a, int b) {
 	if (a < 1 || b < 1) return 0;
 	
 	int max = (a > b) ? a : b;
-	int result = 0;
 	for (int i = max; ; i++) {
 		if (i % a == 0 && i % b == 0)return i;
 	}

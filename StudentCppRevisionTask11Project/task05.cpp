@@ -35,6 +35,12 @@
 */
 
 int task05(int a, int b, int c) {
+	if (a < 1 || b < 1 || c < 1)return 0;
 
-	return 0;
+	int max = (a > b && a > c) ? a : (b > c) ? b : c;
+	for (int i = max; ; i++) {
+		if (i % a == 0 && i % b == 0 && i % c == 0) {
+			return i;
+		}
+	}
 }
