@@ -31,7 +31,6 @@
 */
 
 int task01(int n) {
-	cout << n << endl;
 	if (n < 2) return 0;
 
 	int result = 0;

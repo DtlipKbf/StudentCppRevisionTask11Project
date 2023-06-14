@@ -37,6 +37,12 @@
 */
 
 int task02(int a, int b) {
+	cout << a << " " << b << endl;
+	if (a < 1 || b < 1) return 0;
 
-	return 0;
+	while (a > 0 && b > 0) {
+		(a > b) ? a = a % b : b = b % a;
+	}
+
+	return a + b;
 }
