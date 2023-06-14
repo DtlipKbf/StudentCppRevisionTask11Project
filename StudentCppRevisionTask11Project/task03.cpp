@@ -37,6 +37,13 @@
 */
 
 int task03(int a, int b, int c) {
+	if (a < 1 || b < 1 || c < 1) return 0;
+	
+	int result = 1;
+	int min = (a < b && a < c) ? a : (b < c) ? b : c;
+	for (int i = 2; i <= min ; i++) {
+		if (a % i == 0 && b % i == 0 && c % i == 0) result = i;
+	}
 
-	return 0;
+	return result;
 }
