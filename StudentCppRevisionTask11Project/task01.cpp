@@ -30,4 +30,17 @@
 *	[output 5]: 0
 */
 
-//task01
+int task01(int n) {
+	cout << n << endl;
+	if (n < 2) return 0;
+
+	int result = 0;
+
+	for (int i = 1; i < n; i++) {
+		if (n % i == 0) {
+			result = i;
+		}
+	}
+
+	return result;
+}

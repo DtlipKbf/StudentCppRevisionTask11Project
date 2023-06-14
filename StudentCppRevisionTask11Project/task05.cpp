@@ -34,4 +34,7 @@
 *	[output 6]: 0
 */
 
-//task05
+int task05(int a, int b, int c) {
+
+	return 0;
+}
