@@ -27,6 +27,20 @@
 */
 
 bool taskX(long long n) {
+	n *= (n > 0) ? 1 : -1;
 
-	return true;
+	int array[25];
+	int size = 0;
+
+	for (int i = 0; n > 0; i++, n /= 10, size++) {
+		array[i] = n % 10;
+	}
+
+	for (int i = 0; i < size-1; i++) {
+		for (int j = i + 1; j < size; j++) {
+			if (array[i] == array[j]) return true;
+		}
+	}
+
+	return false;
 }

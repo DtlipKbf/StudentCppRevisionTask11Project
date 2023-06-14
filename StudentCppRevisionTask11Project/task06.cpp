@@ -29,7 +29,6 @@
 */
 
 int task06(long long n) {
-	cout << n << endl;
 	n *= (n > 0) ? 1 : -1;
 	int count = 0;
 	int array[25];
@@ -43,6 +42,5 @@ int task06(long long n) {
 		if (array[i] < array[i-1] && array[i] < array[i+1]) count++;
 	}
 
-	cout << count << endl;
 	return count;
 }
